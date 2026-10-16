@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b67">
+  <title>Nguyễn Hoàng – Luật sư</title>
+  <meta name="description" content="Trang giới thiệu Nguyễn Hoàng – Luật sư. Kết nối qua Facebook hoặc Messenger.">
+
+  <!-- Ảnh xem trước khi chia sẻ liên kết: các thẻ này dùng sau khi website đã được đăng công khai.
+       Nếu cần ảnh xem trước riêng, có thể thay content của og:image bằng URL HTTPS công khai của ảnh bìa. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nguyễn Hoàng – Luật sư">
+  <meta property="og:description" content="Tư vấn pháp lý • Đồng hành cùng bạn">
+  <meta property="og:image" content="anh-bia.png">
+
+  <style>
+    :root {
+      --navy: #173b67;
+      --blue: #0878f9;
+      --pale: #eef5fd;
+      --ink: #203b60;
+      --muted: #52657c;
+      --gold: #d6b45d;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #fff;
+    }
+    .hero {
+      position: relative;
+      min-height: 300px;
+      height: clamp(260px, 36vw, 470px);
+      overflow: hidden;
+      background: #dce8d1;
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+    .profile {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 22px 28px;
+      text-align: center;
+    }
+    .avatar {
+      width: 170px;
+      height: 170px;
+      margin: -78px auto 10px;
+      position: relative;
+      border: 6px solid white;
+      outline: 3px solid var(--gold);
+      border-radius: 50%;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 5px 20px #173b6720;
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    h1 {
+      margin: 14px 0 5px;
+      color: var(--navy);
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+    }
+    .role {
+      margin: 0 0 12px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .tagline {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .intro {
+      max-width: 690px;
+      margin: 0 auto 24px;
+      line-height: 1.65;
+      color: #334e70;
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 0 auto 10px;
+    }
+    .btn {
+      min-width: min(300px, 100%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px 22px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      transition: transform .15s ease, box-shadow .15s ease;
+      box-shadow: 0 5px 14px #102f5715;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px #102f5725; }
+    .btn:focus-visible { outline: 3px solid #d6b45d; outline-offset: 3px; }
+    .btn-facebook { background: #0878f9; color: #fff; }
+    .btn-messenger { background: linear-gradient(110deg, #eaf1fb, #f0eafa); color: #183c68; }
+    .icon {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      flex: 0 0 34px;
+      border-radius: 50%;
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .btn-facebook .icon { background: #fff; color: #0878f9; }
+    .btn-messenger .icon { color: white; background: linear-gradient(135deg, #0878f9, #b42bfa); font-size: 18px; }
+    .btn-copy { display: flex; flex-direction: column; text-align: left; gap: 3px; }
+    .btn-copy small { font-size: 12px; font-weight: 400; opacity: .9; }
+    @media (max-width: 650px) {
+      .hero { height: 250px; min-height: 220px; }
+      .avatar { width: 132px; height: 132px; margin-top: -58px; border-width: 5px; }
+      .role { font-size: 18px; }
+      .tagline { font-size: 16px; }
+      .intro { font-size: 15px; }
+      .actions { flex-direction: column; align-items: stretch; max-width: 390px; }
+      .btn { min-width: 0; width: 100%; padding: 14px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" aria-label="Ảnh bìa">
+    <img src="anh-bia.png" alt="Ảnh bìa Cùng nhau viết tiếp những ước mơ">
+  </header>
+
+  <main>
+    <section class="profile" aria-labelledby="page-title">
+      <div class="avatar">
+        <img src="anh-dai-dien.png" alt="Ảnh đại diện Nguyễn Hoàng">
+      </div>
+      <h1 id="page-title">Nguyễn Hoàng</h1>
+      <p class="role">Luật sư</p>
+      <p class="tagline">Tư vấn pháp lý <span aria-hidden="true">•</span> Đồng hành cùng bạn</p>
+      <p class="intro">
+        Kết nối để trao đổi về nhu cầu tư vấn pháp lý. Bạn có thể xem trang Facebook
+        hoặc gửi tin nhắn qua Messenger bằng các nút bên dưới.
+      </p>
+
+      <nav class="actions" aria-label="Liên kết liên hệ">
+        <a class="btn btn-facebook"
+           href="https://www.facebook.com/N.LsHoang/"
+           target="_blank" rel="noopener noreferrer">
+          <span class="icon" aria-hidden="true">f</span>
+          <span class="btn-copy">
+            <span>Trang cá nhân</span>
+            <small>Xem Facebook của Nguyễn Hoàng</small>
+          </span>
+        </a>
+
+        <a class="btn btn-messenger"
+           href="https://m.me/LsNguyennhuyyhoangg.26010121"
+           target="_blank" rel="noopener noreferrer">
+          <span class="icon" aria-hidden="true">➤</span>
+          <span class="btn-copy">
+            <span>Nhắn tin</span>
+            <small>Gửi tin nhắn qua Messenger</small>
+          </span>
+        </a>
+      </nav>
+    </section>
+
+  </main>
+
+
+</body>
+</html>
